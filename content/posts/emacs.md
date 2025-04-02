@@ -5,7 +5,10 @@ title = 'Getting started with Emacs'
 +++
 
 ## What is Emacs?
-Emacs is a highly customizable and extensible text editor, often used by developers, writers, and power users. It's known for its deep set of features and the ability to adapt to almost any workflow or task, from simple text editing to complex programming and project management.
+Have you ever wished for a tool that adapts perfectly to your workflow, whether you're coding, writing, or managing complex projects?
+Emacs isn’t just a text editor—it's a powerhouse that evolves with your needs.
+From its customizable interface to its vast array of features, Emacs has become the go-to choice for developers, writers, and power users who want complete control over their environment.
+Whether you're tackling a simple task or navigating an intricate coding project, Emacs has the flexibility to do it all—and more.
 <!--more-->
 
 In this blog post - written entirely in Emacs - I'm going to introduce the major features of the editor.
@@ -30,7 +33,7 @@ You can find it on my GitHub repository: https://github.com/johannes-el/emacs-do
 
 To use my configuration, clone the repository and rename the folder to .emacs.d in your home directory.
 You can do this by running the following shell script:
-```console
+```bash
 #!/usr/bin/bash
 
 git clone https://github.com/johannes-el/emacs-dotfiles --depth=1
@@ -49,7 +52,7 @@ As you've likely noticed, a well-crafted configuration can significantly enhance
 ### Documentation
 The following list of features does not claim to be exhaustive. It tries to showcase how powerful Emacs is and introduces the most used packages.
 
-The first notable thing about Emacs is, that it is self-documenting, meaning all of the functionality that Emacs provides is backed within the editor itself.
+The first notable thing about Emacs is that it is self-documenting, meaning all of the functionality Emacs provides is built right into the editor itself.
 This makes it really easy to look things up when you want to learn about new functionalities.
 
 ### Magit
@@ -77,7 +80,9 @@ The major selling point of Org-roam is that you can build your own Zettelkasten 
 You can even visualize your notes with a frontend, allowing you to explore the Zettelkasten further: https://github.com/org-roam/org-roam-ui.
 
 ### Gnu Emms
-The Emacs Multimedia System allows me to play music from externel music players (like mpv), which is quite a fun experience!
+The Emacs Multimedia System (EMMS) lets me play music directly from external players like mpv, which creates a fun and immersive experience.
+Personally, I store all my music files in a directory that EMMS defaults to when launched.
+This allows me to jump straight into an EMMS buffer and enjoy my favorite tunes without missing a beat.
 
 ### ERC
 ERC is an IRC client in Emacs. I use it frequently myself to talk to fellow Emacs users all things Emacs!
