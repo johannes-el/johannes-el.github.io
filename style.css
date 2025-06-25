@@ -1,0 +1,141 @@
+body, html {
+  margin: 0;
+  margin-top: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+.github-icon {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  z-index: 1000;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.github-icon:hover {
+  transform: scale(1.2);
+  color: #444;
+}
+
+.contact-icons {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.icon-link {
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+  color: #444;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 0.5rem;
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+.project-shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  color: #222;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.project-shape:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}
+
+.project-shape:nth-child(1):hover {
+  background-color: #f28b82;
+}
+
+.project-shape:nth-child(2):hover {
+  background-color: #fbbc04;
+}
+
+.project-shape:nth-child(3):hover {
+  background-color: #ffb475;
+}
+
+.project-shape:nth-child(4):hover {
+  background-color: #ccff90;
+}
+
+.project-shape:nth-child(5):hover {
+  background-color: #a7ffeb;
+}
+
+.project-shape:nth-child(6):hover {
+  background-color: #cbf0f8;
+}
+
+.project-shape:nth-child(7):hover {
+  background-color: #ddbae8;
+}
+
+.project-shape:nth-child(8):hover {
+  background-color: #a7febb;
+}
+
+.project-shape:nth-child(9):hover {
+  background-color: #fdcfe8;
+}
+
+#ui {
+  flex: 1;
+  background-color: #f3f3f3;
+  padding: 2rem;
+  position: relative;
+  min-height: 100vh;
+  display: block;
+}
+
+#scene-container {
+  position: fixed;        /* fix position relative to viewport */
+  top: 10px;              /* small gap from top */
+  right: 10px;            /* small gap from right */
+  width: 300px;           /* small fixed width */
+  height: 200px;          /* small fixed height */
+  border: 1px solid #ccc; /* optional: show container border */
+  z-index: 100;           /* keep on top */
+  background-color: #000; /* optional black bg behind canvas */
+}
+
+#scene-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}

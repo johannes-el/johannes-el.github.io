@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="emacs-blog.css" />
+  <title>What is Emacs?</title>
+</head>
+<body>
+
+  <h2 id="what-is-emacs">What is Emacs?</h2>
+  <p>
+    Have you ever wished for a tool that adapts perfectly to your workflow, whether you’re coding, writing, or managing complex projects?
+    Emacs isn’t just a text editor—it’s a powerhouse that evolves with your needs.
+    From its customizable interface to its vast array of features, Emacs has become the go-to choice for developers, writers, and power users.
+  </p>
+  <p>
+    In this blog post—written entirely in Emacs—I’ll introduce its major features.
+  </p>
+
+  <h2 id="installing-emacs">Installing Emacs</h2>
+  <p>
+    To follow along, install Emacs from
+    <a href="https://www.gnu.org/software/emacs/download.html">the official website</a>.
+  </p>
+
+  <h2 id="configuring-emacs">Configuring Emacs</h2>
+  <p>
+    Emacs becomes powerful when you configure it to your liking. If you're used to Vim keybindings, enable <strong>Evil Mode</strong>—a minor mode for Vim emulation.
+  </p>
+  <p>
+    I use Evil Mode myself. You can use my configuration:
+    <a href="https://github.com/johannes-el/emacs-dotfiles">github.com/johannes-el/emacs-dotfiles</a>.
+  </p>
+
+  <pre><code>#!/usr/bin/bash
+
+git clone https://github.com/johannes-el/emacs-dotfiles --depth=1
+
+if [ -d "$HOME/.emacs.d" ]; then
+  rm -rf "$HOME/.emacs.d"
+fi
+
+mv emacs-dotfiles "$HOME/.emacs.d"
+</code></pre>
+
+  <p>
+    For more advanced setups, consider <a href="https://github.com/doomemacs/doomemacs">Doom Emacs</a> or <a href="https://github.com/syl20bnr/spacemacs">Spacemacs</a>.
+  </p>
+
+  <h2 id="features">Features</h2>
+
+  <h3 id="documentation">Documentation</h3>
+  <p>
+    Emacs is self-documenting. You can discover built-in functions and packages from within the editor.
+  </p>
+
+  <h3 id="magit">Magit</h3>
+  <p>
+    <strong>Magit</strong> is a Git interface in Emacs. It provides an intuitive UI for Git workflows and makes version control pleasant and efficient.
+  </p>
+
+  <h3 id="org-mode">Org-mode</h3>
+  <p>
+    <strong>Org-mode</strong> is a powerful major mode for note-taking, task management, and exporting to various formats (HTML, PDF, LaTeX, etc.). It supports inline code execution and agendas.
+  </p>
+
+  <h3 id="org-roam">Org-roam</h3>
+  <p>
+    <strong>Org-roam</strong> enables Zettelkasten-style note linking. With <a href="https://github.com/org-roam/org-roam-ui">org-roam-ui</a>, you can visualize your notes graphically.
+  </p>
+
+  <h3 id="gnu-emms">Gnu EMMS</h3>
+  <p>
+    The <strong>Emacs Multimedia System (EMMS)</strong> lets you play music from players like <code>mpv</code> inside Emacs.
+  </p>
+
+  <h3 id="erc">ERC</h3>
+  <p>
+    <strong>ERC</strong> is an IRC client in Emacs. Great for community chat, including Emacs user groups.
+  </p>
+
+  <h3 id="projectile">Projectile</h3>
+  <p>
+    <strong>Projectile</strong> is a project management library. It organizes your files into projects and adds commands like <code>projectile-grep</code>.
+  </p>
+
+  <h3 id="notmuch">Notmuch</h3>
+  <p>
+    <strong>Notmuch</strong> integrates email into Emacs, especially when combined with tools like <code>mbsync</code>.
+  </p>
+
+  <h3 id="open-source">Open Source</h3>
+  <p>
+    Emacs is open-source software. You can inspect, modify, and share your own configuration.
+  </p>
+
+  <h2 id="conclusion">Conclusion</h2>
+  <p>
+    Emacs offers much more than what’s covered here. For me, it’s the most complete and enjoyable computing experience. I hope I convinced you to give it a try!
+  </p>
+
+</body>
+</html>

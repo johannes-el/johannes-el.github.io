@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  max-width: 700px;
+  margin: 2rem auto;
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+h2, h3 {
+  color: #2c3e50;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+code {
+  font-family: monospace;
+  background: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
